@@ -11,7 +11,8 @@ fs = 16000
 block_duration = 2.0  # seconds
 block_size = int(fs * block_duration)
 channels = 1
-model_name = "openai/whisper-large-v2"
+# model_name = "openai/whisper-large-v2"
+model_name = "openai/whisper-small"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 audio_queue = queue.Queue()
